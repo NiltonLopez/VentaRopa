@@ -33,7 +33,7 @@ namespace pApp_Serv_WEB.Clases
                         NombreSede = tblSede.NombreSede,
                         NombreVendedor = tblVendedor.NombreVendedor,
                         NombrePrenda = tblPd.NombrePrenda,
-                        CantidadPrenda = tblPd.Cantidad,
+                        CantidadPrenda = tblVenta.cantidad,
                         Precio = tblPd.precio,
                     }).ToList();
 
@@ -43,7 +43,6 @@ namespace pApp_Serv_WEB.Clases
 
         public string Insertar(tblVenta venta)
         {
-            CalcularValorVenta();
             dbVentaRopa.tblVentas.Add(venta);
             dbVentaRopa.SaveChanges();
             return "Se insertó la venta del cliente con documento: " + venta.idClienteVenta + " exitosamente";
