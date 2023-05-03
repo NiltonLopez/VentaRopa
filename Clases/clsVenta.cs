@@ -51,6 +51,7 @@ namespace pApp_Serv_WEB.Clases
 
         private void CalcularValorVenta()
         {
+            //Utilizamos un Foreach
             foreach (var Venta in VGVenta)
             {
                 Venta.Total = Venta.Precio * Venta.CantidadPrenda;

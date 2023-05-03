@@ -71,7 +71,6 @@ function EjecutarComando(Comando) {
     let SedeDevolucion = $("#SedeDevolucion").val();
     let MotivoDevolucion = $("#lblMotivoDevolucion").val();
     let validaDevolucion = false;
-    //////////////////////////
 
     let idVenta = $("#CodigoVenta").val();
     DatosVenta = {
