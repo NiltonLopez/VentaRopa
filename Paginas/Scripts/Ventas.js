@@ -110,6 +110,7 @@ function EjecutarComando(Comando) {
     let idPrendaVenta = $("#PrendaVenta").val();
     let cantidad = $("#CantPrendaVenta").val();
     let idMetodoPagoVenta = $("#MetodoPago").val();
+    let totalVenta = $("#TotalVenta").val();
 
     let DatosVenta = {
         idVenta: idVenta,
@@ -120,6 +121,7 @@ function EjecutarComando(Comando) {
         idSedeVenta: idSedeVenta,
         fechaVenta: fechaVenta,
         cantidad: cantidad,
+        totalVenta: totalVenta,
         Comando: Comando
     }
 
