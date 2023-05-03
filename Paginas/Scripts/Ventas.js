@@ -128,7 +128,7 @@ function EjecutarComando(Comando) {
 
     $.ajax({
         type: "POST",
-        url: "../Controladores/ControladorVentas.ashx", /////
+        url: "../Controladores/ControladorVentas.ashx", ///
         contentType: "json",
         data: JSON.stringify(DatosVenta), ////
         success: function (rpta) {
