@@ -69,6 +69,8 @@ function EjecutarComando(Comando) {
     let fechaDevolucion = $("#FechaDevolucion").val();
     let MotivoDevolucion = $("#lblMotivoDevolucion").val();
 
+
+
     let idVenta = $("#CodigoVenta").val();
     DatosVenta = {
         idVenta: idVenta,
