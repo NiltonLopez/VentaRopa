@@ -67,9 +67,11 @@ function EjecutarComando(Comando) {
     let idVentaDevolucion = $("#CodigoVenta").val();
     let CantPrendaDevolucion = parseInt($("#CantPrendaDevolucion").val());
     let fechaDevolucion = $("#FechaDevolucion").val();
-    //no se necesita
+    let SedeDevolucion = $("#SedeDevolucion").val();
+    let SedeDevolucion = $("#SedeDevolucion").val();
+    let SedeDevolucion = $("#SedeDevolucion").val();
+    let SedeDevolucion = $("#SedeDevolucion").val();
     let MotivoDevolucion = $("#lblMotivoDevolucion").val();
-    let validaDevolucion = false;
 
     let idVenta = $("#CodigoVenta").val();
     DatosVenta = {
