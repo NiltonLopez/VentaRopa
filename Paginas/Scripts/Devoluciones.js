@@ -26,6 +26,8 @@ $(document).ready(function () {
     LlenarTablaDevoluciones();
 });
 
+
+//Creamos un Consultar Ventas
 function ConsultarVentas() {
     event.preventDefault();
     let idVenta = $("#CodigoVenta").val();
@@ -47,6 +49,7 @@ function ConsultarVentas() {
             $("#NombreCliente").val(Venta.tblCliente.NombreCliente);
             $("#DocumentoCliente").val(Venta.tblCliente.idCliente);
             $("#PrendaDevolucion").val(Venta.idPrendaVenta);
+            //Inserta al LocalStorage la cantidad de prendas vendidas.
             localStorage.setItem('cantidadPrendas', Venta.cantidad);
             Fecha = Venta.fechaVenta;
             $("#FechaVenta").val(Fecha.split("T")[0])
@@ -64,11 +67,7 @@ function EjecutarComando(Comando) {
     let idVentaDevolucion = $("#CodigoVenta").val();
     let CantPrendaDevolucion = parseInt($("#CantPrendaDevolucion").val());
     let fechaDevolucion = $("#FechaDevolucion").val();
-    let VendedorDevolucion = $("#VendedorDevolucion").val();
-    let SedeDevolucion = $("#SedeDevolucion").val();
     let MotivoDevolucion = $("#lblMotivoDevolucion").val();
-    let validaDevolucion = false;
-    //////////////////////////
 
     let idVenta = $("#CodigoVenta").val();
     DatosVenta = {
